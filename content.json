@@ -1,1 +1,10 @@
-{}
+{
+  "custom-field": "my desc",
+  "custom-object": {
+    "custom-line": "first line",
+    "custom-text": "first text"
+  },
+  "custom-list": [
+    {}
+  ]
+}
