@@ -4,6 +4,10 @@
     "custom-line": "first line",
     "custom-text": "first text"
   },
+  "webIndexMeta":{
+    "title":"mrCod3r.ir",
+    "desc":"Professional Web Developer & Teacher more info on mrCod3r.ir"
+  },
   "custom-list": [
     {}
   ]
