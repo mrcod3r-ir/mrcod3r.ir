@@ -6,4 +6,10 @@ export default defineNuxtConfig({
   content: {
     // https://content.nuxtjs.org/api/configuration
   },
+  // buildModules: ["@nuxt/postcss8"],
+  build: {
+    postcss: {
+      postcssOptions: require("./postcss.config.js"),
+    },
+  },
 });
