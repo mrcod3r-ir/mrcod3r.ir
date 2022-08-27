@@ -1,19 +1,22 @@
 <script setup>
 import { themeChange } from "theme-change";
-let getTheme = () => {
-  var key = localStorage.getItem("theme");
-  return key;
-};
-onMounted(async () => {
+import { useMainStore } from "~~/stores/mainStore";
+import SideNav from "@/components/SideNav.vue";
+var store = useMainStore();
+var darkMode = store.darkMode;
+var theme = darkMode ? "dark" : "light";
+
+const html = ref();
+
+onMounted(async ($pinia) => {
   themeChange(false);
-  var theme = await getTheme();
 });
 </script>
 <template>
-  <Html :data-theme="theme" dir="ltr">
-    <NuxtPage />
+  <Html ref="html" :data-theme="theme" dir="ltr">
+    <div class="container mx-auto">
+      <SideNav />
+      <NuxtPage />
+    </div>
   </Html>
 </template>
-<style>
-@import url("@/assets/css/main.css");
-</style>

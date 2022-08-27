@@ -1,16 +1,23 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
+  mode: "jit",
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
+    "./assets/**/*.css",
+    "./components/*.{vue,js}",
+    "./components/**/*.{vue,js}",
+    "./composables/*.{ts,js}",
+    "./composables/**/*.{ts,js}",
+    "./pages/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
-    // "./nuxt.config.{js,ts}",
+    "./*.{vue,js}",
   ],
   daisyui: {
+    styled: true,
     themes: [
       {
-        mrcod3r: {
+        light: {
           primary: "#66cc99",
           secondary: "#dec340",
           accent: "#66cc99",
