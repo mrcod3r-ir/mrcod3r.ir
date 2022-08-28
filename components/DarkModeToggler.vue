@@ -1,11 +1,11 @@
 <template>
-  <label class="swap swap-rotate">
+  <label class="swap swap-rotate" v-bind="$attrs">
     <!-- this hidden checkbox controls the state -->
     <input type="checkbox" class="hidden" @change="darkModeToggler.click()" />
 
     <!-- sun icon -->
     <svg
-      class="swap-on fill-current w-5 h-5"
+      class="swap-on w-5 h-5 fill-neutral"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -16,7 +16,7 @@
 
     <!-- moon icon -->
     <svg
-      class="swap-off fill-current w-5 h-5"
+      class="swap-off w-5 h-5 fill-neutral"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >

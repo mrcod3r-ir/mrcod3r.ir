@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">{{ data.title }}</h1>
+  <div class="flex flex-row h-full">
+    <SideBar class="bg-neutral text-info basis-3/12"> sidebar </SideBar>
+    <div class="py-12 basis-9/12">
+      <h1 class="text-3xl font-bold underline">{{ data.title }}</h1>
+    </div>
 
     <!-- <ContentDoc :value="data" /> -->
   </div>
 </template>
 
 <script setup>
+import SideBar from "@/components/SideBar.vue";
 const { data } = await useAsyncData("", () => queryContent("/").findOne());
 useHead({
   title: data._rawValue.meta.title,

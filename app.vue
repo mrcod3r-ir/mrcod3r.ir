@@ -17,8 +17,10 @@ onMounted(async ($pinia) => {
     <div
       class="container mx-auto bg-info rounded-2p overflow-hidden mt-16 flex flex-row"
     >
-      <SideNav class="bg-primary basis-1/24" />
-      <NuxtPage class="basis-23/24" />
+      <SideNav class="bg-primary py-12 basis-1/24 text-center" />
+      <div class="basis-23/24">
+        <NuxtPage />
+      </div>
       <!-- <SideNav class="bg-primary w-16" />
       <NuxtPage class="w-[calc(100%_-_4rem)]" /> -->
     </div>

@@ -1,9 +1,12 @@
 <template>
   <div>
-    side nav
-    <DarkModeToggler />
+    <nuxt-link to="/">
+      <HomeIcon class="mx-auto my-2 mt-4 fill-neutral" />
+    </nuxt-link>
+    <DarkModeToggler class="my-2" />
   </div>
 </template>
 <script setup>
 import DarkModeToggler from "./DarkModeToggler.vue";
+import HomeIcon from "./icons/HomeIcon.vue";
 </script>
