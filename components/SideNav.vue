@@ -8,5 +8,5 @@
 </template>
 <script setup>
 import DarkModeToggler from "./DarkModeToggler.vue";
-import HomeIcon from "./icons/HomeIcon.vue";
+import HomeIcon from "./svg/HomeIcon.vue";
 </script>

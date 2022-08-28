@@ -1,6 +1,10 @@
 <template>
   <div class="flex flex-row h-full">
-    <SideBar class="bg-neutral text-info basis-3/12"> sidebar </SideBar>
+    <SideBar class="bg-neutral text-info basis-3/12">
+      <div class="profile">
+        <ProfileShape class="w-40 h-auto"></ProfileShape>
+      </div>
+    </SideBar>
     <div class="py-12 basis-9/12">
       <h1 class="text-3xl font-bold underline">{{ data.title }}</h1>
     </div>
@@ -11,6 +15,7 @@
 
 <script setup>
 import SideBar from "@/components/SideBar.vue";
+import ProfileShape from "@/components/svg/ProfileShape.vue";
 const { data } = await useAsyncData("", () => queryContent("/").findOne());
 useHead({
   title: data._rawValue.meta.title,
