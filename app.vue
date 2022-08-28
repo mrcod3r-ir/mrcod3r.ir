@@ -15,10 +15,10 @@ onMounted(async ($pinia) => {
 <template>
   <Html ref="html" :data-theme="theme" dir="ltr">
     <div
-      class="container mx-auto bg-info rounded-2p overflow-hidden mt-16 flex columns-24"
+      class="container mx-auto bg-info rounded-2p overflow-hidden mt-16 flex flex-row"
     >
-      <SideNav class="bg-primary columns-1" />
-      <NuxtPage class="columns-23" />
+      <SideNav class="bg-primary basis-1/24" />
+      <NuxtPage class="basis-23/24" />
       <!-- <SideNav class="bg-primary w-16" />
       <NuxtPage class="w-[calc(100%_-_4rem)]" /> -->
     </div>
