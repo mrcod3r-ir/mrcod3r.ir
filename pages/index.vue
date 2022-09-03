@@ -19,8 +19,10 @@
         <h2 class="text-2xl mt-6 mb-4">
           {{ data.sideBar.contactMe.title }}
         </h2>
-        <!-- <template v-for="(item, i) in data.sideBar.contactMe.content">
-        </template> -->
+        <div v-for="(item, i) in data.sideBar.contactMe.content" :key="i">
+          <p>{{ item.iconName }}</p>
+          <a :href="item.link">{{ item.text }}</a>
+        </div>
       </div>
     </SideBar>
     <div class="py-12 basis-9/12">
@@ -44,6 +46,7 @@ const { data } = await useAsyncData("", () => queryContent("/").findOne());
 //   WorldIcon,
 //   LocationIcon,
 // };
+
 // console.log(contactIcons);
 useHead({
   title: data._rawValue.meta.title,
