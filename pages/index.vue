@@ -1,8 +1,26 @@
 <template>
   <div class="flex flex-row h-full">
-    <SideBar class="bg-neutral text-info basis-3/12">
-      <div class="profile">
-        <ProfileShape class="w-40 h-auto"></ProfileShape>
+    <SideBar class="bg-neutral text-info basis-3/12 px-8">
+      <div class="profile my-12">
+        <SvgProfile class="w-40 h-auto mx-auto"></SvgProfile>
+        <!-- Full Name and Proficiency -->
+        <h2 class="text-2xl text-center mt-6">
+          {{ data.sideBar.fullName }}
+        </h2>
+        <h2 class="text-2xl text-center mb-4">
+          {{ data.sideBar.proficiency }}
+        </h2>
+        <!-- About me -->
+        <h2 class="text-2xl mt-6 mb-4">
+          {{ data.sideBar.aboutMe.title }}
+        </h2>
+        <p>{{ data.sideBar.aboutMe.content }}</p>
+        <!-- Contact Me -->
+        <h2 class="text-2xl mt-6 mb-4">
+          {{ data.sideBar.contactMe.title }}
+        </h2>
+        <!-- <template v-for="(item, i) in data.sideBar.contactMe.content">
+        </template> -->
       </div>
     </SideBar>
     <div class="py-12 basis-9/12">
@@ -14,9 +32,19 @@
 </template>
 
 <script setup>
-import SideBar from "@/components/SideBar.vue";
-import ProfileShape from "@/components/svg/ProfileShape.vue";
 const { data } = await useAsyncData("", () => queryContent("/").findOne());
+// const contactIcons = Object.assign(
+//   data._rawValue.sideBar.contactMe.content.map((item) => item.iconName),
+//   {}
+// );
+
+// const contactIcons = {
+//   EmailIcon,
+//   PhoneIcon,
+//   WorldIcon,
+//   LocationIcon,
+// };
+// console.log(contactIcons);
 useHead({
   title: data._rawValue.meta.title,
   // or, instead:

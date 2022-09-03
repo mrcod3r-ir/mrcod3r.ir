@@ -1,6 +1,39 @@
 {
   "title": "mrCod3r.ir",
   "description": "The writing experience for Nuxt 3",
+  "sideBar": {
+    "fullName": "M.Hasan Qomi",
+    "proficiency": "FullStack Developer",
+    "aboutMe": {
+      "title": "About Me",
+      "content": "I’m Senior Front-End Developer and FullStack Developer. Coding and Reading new technology is my daily routine.      Designing and creating new ideas and startup from zero hundred is one of my favorites. Teamwork skills, artistic works such as songwriting, music and poetry are among my other interests."
+    },
+    "contactMe": {
+      "title": "Contact Me",
+      "content": [
+        {
+          "iconName": "worldIcon",
+          "link": "https://mrcoder.ir",
+          "text": "mrCod3r.ir"
+        },
+        {
+          "iconName": "PhoneIcon",
+          "link": "tel:+989199336764",
+          "text": "+98 919 933 67 64"
+        },
+        {
+          "iconName": "EmailIcon",
+          "link": "mailto:mrcod3r.ir@gmail.com,me@mrcod3r.ir",
+          "text": "me@mrCod3r.ir"
+        },
+        {
+          "iconName": "LocationIcon",
+          "link": "https://goo.gl/maps/wTB32g2FAWZMvDJ97",
+          "text": "IRAN - QOM"
+        }
+      ]
+    }
+  },
   "category": "announcement",
   "meta": {
     "title": "mrcoder",
