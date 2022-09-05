@@ -41,6 +41,17 @@ const { data } = await useAsyncData("", () => queryContent("/").findOne());
 //   {}
 // );
 
+<<<<<<< HEAD
+=======
+// const contactIcons = {
+//   EmailIcon,
+//   PhoneIcon,
+//   WorldIcon,
+//   LocationIcon,
+// };
+
+// console.log(contactIcons);
+>>>>>>> 8c0d2bb1c4a9b347c90ed7b55ad777857221e359
 useHead({
   title: data._rawValue.meta.title,
   // or, instead:
