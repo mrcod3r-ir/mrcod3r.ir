@@ -19,8 +19,11 @@
         <h2 class="text-2xl mt-6 mb-4">
           {{ data.sideBar.contactMe.title }}
         </h2>
-        <!-- <template v-for="(item, i) in data.sideBar.contactMe.content">
-        </template> -->
+
+        <template v-for="(item, i) in data.sideBar.contactMe.content" :key="i">
+          {{ item.iconName }}
+          <SvgIcon :name="item.iconName" />
+        </template>
       </div>
     </SideBar>
     <div class="py-12 basis-9/12">
@@ -38,13 +41,6 @@ const { data } = await useAsyncData("", () => queryContent("/").findOne());
 //   {}
 // );
 
-// const contactIcons = {
-//   EmailIcon,
-//   PhoneIcon,
-//   WorldIcon,
-//   LocationIcon,
-// };
-// console.log(contactIcons);
 useHead({
   title: data._rawValue.meta.title,
   // or, instead:
