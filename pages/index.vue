@@ -21,13 +21,37 @@
         </h2>
 
         <template v-for="(item, i) in data.sideBar.contactMe.content" :key="i">
-          {{ item.iconName }}
-          <SvgIcon :name="item.iconName" />
+          <div class="my-2 flex">
+            <a
+              :href="item.link"
+              target="blank"
+              class="bg-info text-info rounded-md w-8 h-8 flex justify-center items-center"
+            >
+              <SvgIcon
+                v-if="item.iconName == 'WorldIcon'"
+                :name="item.iconName"
+                class="w-6 h-6 fill-Slate"
+              />
+              <SvgIcon
+                v-else
+                :name="item.iconName"
+                class="w-5 h-5 fill-Slate"
+              />
+            </a>
+            <a :href="item.link" class="text-current ml-4" target="blank">
+              {{ item.text }}
+            </a>
+          </div>
         </template>
       </div>
     </SideBar>
-    <div class="py-12 basis-9/12">
-      <h1 class="text-3xl font-bold underline">{{ data.title }}</h1>
+    <div class="py-12 basis-9/12 px-4">
+      <section v-for="(sec, i) in data.home.sections" :key="i">
+        <h2 class="text-2xl underline underline-offset-4">{{ sec.title }}</h2>
+        <ul class="my-4">
+          <li v-for="(item, idx) in sec.items" :key="idx">{{ item }}</li>
+        </ul>
+      </section>
     </div>
 
     <!-- <ContentDoc :value="data" /> -->
@@ -41,17 +65,6 @@ const { data } = await useAsyncData("", () => queryContent("/").findOne());
 //   {}
 // );
 
-<<<<<<< HEAD
-=======
-// const contactIcons = {
-//   EmailIcon,
-//   PhoneIcon,
-//   WorldIcon,
-//   LocationIcon,
-// };
-
-// console.log(contactIcons);
->>>>>>> 8c0d2bb1c4a9b347c90ed7b55ad777857221e359
 useHead({
   title: data._rawValue.meta.title,
   // or, instead:

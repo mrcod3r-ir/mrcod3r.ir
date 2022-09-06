@@ -5653,6 +5653,11 @@ uvu@^0.5.0:
     kleur "^4.0.3"
     sade "^1.7.3"
 
+vazir-font@^30.1.0:
+  version "30.1.0"
+  resolved "https://registry.yarnpkg.com/vazir-font/-/vazir-font-30.1.0.tgz#68a86c31c17b9dcc9384e19f10f02331df97374c"
+  integrity sha512-XN2Uprw/Q3QhAAApITykf+v0l4p4FpqvIh0h2XDSJRjwUiYeDpwQxECQF/93ZOCDO2t8haBi6BZZqO8sifYNRg==
+
 vfile-location@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/vfile-location/-/vfile-location-4.0.1.tgz#06f2b9244a3565bef91f099359486a08b10d3a95"

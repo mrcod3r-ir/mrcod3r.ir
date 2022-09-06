@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  mode: "jit",
   content: [
     "./assets/**/*.css",
     "./components/*.{vue,js}",
@@ -37,6 +36,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      colors: {
+        Slate: "#3d3e42",
+      },
       width: {
         "70p": "70px",
       },

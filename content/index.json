@@ -22,9 +22,19 @@
           "text": "+98 919 933 67 64"
         },
         {
+          "iconName": "WhatsappIcon",
+          "link": "https://web.whatsapp.com/send?phone=+989199336764",
+          "text": "whatsapp"
+        },
+        {
           "iconName": "EmailIcon",
           "link": "mailto:mrcod3r.ir@gmail.com,me@mrcod3r.ir",
           "text": "me@mrCod3r.ir"
+        },
+        {
+          "iconName": "GithubIcon",
+          "link": "https://github.com/mrcod3r-ir",
+          "text": "Github"
         },
         {
           "iconName": "LocationIcon",
@@ -33,6 +43,57 @@
         }
       ]
     }
+  },
+  "home": {
+    "sections": [
+      {
+        "title": "Education",
+        "items": [
+          "- Bachelor Degree of Civil Engineering from Azad University of KASHAN (2008-2013)"
+        ]
+      },
+      {
+        "title": "Experiences",
+        "items": [
+          "- Junior web developer (2015 - 2017)",
+          "- Senior web developer from (2017 - Now)",
+          "- Creates graphics designs for the different websites worldwide by Figma and Photoshop and familiar Illustrator",
+          "- Create and Develop any website and web app’s",
+          "- CIW teacher in Raad School and pv",
+          "- Develop Web Applications and Websites with Html5 & Css3 & Javascript & Jquery & Bootstrap4 & Vue Js & Nuxt Js & React Js & Next Js & Other Js Libs and Familiar with php & wordpress & Python & Django & Node Js & Express Js & Deno & Fresh & headless cms s like strapi , payloadcms ,etc...",
+          "- Responsive Design and Develop with any methods",
+          "- ..."
+        ]
+      },
+      {
+        "title": "Additional Info",
+        "items": [
+          "- Working Full-Time in Tehran - QOM and Freelance for another cities"
+        ]
+      },
+      {
+        "title": "Expertise",
+        "items": [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "Vue Js",
+          "Nuxt Js",
+          "React Js",
+          "Next Js",
+          "Python",
+          "Django",
+          "Node Js",
+          "Express Js"
+        ]
+      },
+      {
+        "title": "Portfolio",
+        "items": [
+          "- Bachelor Degree of Civil Engineering from Azad University of KASHAN (2008-2013)"
+        ]
+      }
+    ]
   },
   "category": "announcement",
   "meta": {

@@ -3,7 +3,7 @@
     v-bind="$attrs"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
-    fill="currentColor"
+    :fill="fill"
     class="w-6 h-6"
   >
     <path
@@ -14,3 +14,8 @@
     />
   </svg>
 </template>
+<script setup>
+const props = defineProps({
+  fill: String,
+});
+</script>

@@ -1,7 +1,21 @@
+@import url(../../node_modules/vazir-font/dist/UI/font-face-UI.css);
+/* @import url(./Ubuntu.font.css); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html[lang="en"],
+  html[lang="en"] * {
+    font-family: Ubuntu, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html[lang="fa"],
+  html[lang="fa"] * {
+    font-family: Vazir UI, system-ui, sans-serif;
+  }
+}
 :root {
 }
 [data-theme="dark"] {

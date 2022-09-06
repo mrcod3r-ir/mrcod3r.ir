@@ -13,7 +13,7 @@ onMounted(async ($pinia) => {
 });
 </script>
 <template>
-  <Html ref="html" :data-theme="theme" dir="ltr">
+  <Html ref="html" :data-theme="theme" dir="ltr" lang="en">
     <div
       class="container mx-auto bg-info rounded-2p overflow-hidden mt-16 flex flex-row"
     >
