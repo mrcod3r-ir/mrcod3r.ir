@@ -41,6 +41,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        xs: "320px",
+      },
       colors: {
         Slate: "#3d3e42",
       },

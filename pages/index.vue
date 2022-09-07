@@ -45,14 +45,16 @@
         </template>
       </div>
     </SideBar>
-    <div class="py-12 basis-9/12 px-4">
-      <section v-for="(sec, i) in sections" :key="i">
+    <div class="py-12 basis-9/12 px-20">
+      <section v-for="(sec, i) in sections" :key="i" class="max-w-lg">
         <h2 class="text-2xl underline underline-offset-4">{{ sec.title }}</h2>
         <ul class="my-4">
-          <li v-for="(item, idx) in sec.items" :key="idx">{{ item }}</li>
+          <li v-for="(item, idx) in sec.items" :key="idx" class="my-4">
+            {{ item }}
+          </li>
         </ul>
       </section>
-      <section>
+      <section class="max-w-lg">
         <h2 class="text-2xl underline underline-offset-4">
           {{ expertises.title }}
         </h2>
