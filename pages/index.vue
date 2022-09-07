@@ -46,10 +46,24 @@
       </div>
     </SideBar>
     <div class="py-12 basis-9/12 px-4">
-      <section v-for="(sec, i) in data.home.sections" :key="i">
+      <section v-for="(sec, i) in sections" :key="i">
         <h2 class="text-2xl underline underline-offset-4">{{ sec.title }}</h2>
         <ul class="my-4">
           <li v-for="(item, idx) in sec.items" :key="idx">{{ item }}</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-2xl underline underline-offset-4">
+          {{ expertises.title }}
+        </h2>
+        <ul class="my-4">
+          <li
+            v-for="(exp, idx2) in expertises.items"
+            :key="idx2"
+            class="border border-solid border-Slate rounded-sm p-1 m-1 inline-block"
+          >
+            {{ exp }}
+          </li>
         </ul>
       </section>
     </div>
@@ -60,10 +74,8 @@
 
 <script setup>
 const { data } = await useAsyncData("", () => queryContent("/").findOne());
-// const contactIcons = Object.assign(
-//   data._rawValue.sideBar.contactMe.content.map((item) => item.iconName),
-//   {}
-// );
+const sections = data._rawValue.home.sections;
+const expertises = data._rawValue.home.expertises;
 
 useHead({
   title: data._rawValue.meta.title,

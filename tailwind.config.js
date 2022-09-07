@@ -12,6 +12,11 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./*.{vue,js}",
   ],
+  safelist: [
+    {
+      pattern: /./,
+    },
+  ],
   daisyui: {
     styled: true,
     themes: [

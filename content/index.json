@@ -70,30 +70,30 @@
         "items": [
           "- Working Full-Time in Tehran - QOM and Freelance for another cities"
         ]
-      },
-      {
-        "title": "Expertise",
-        "items": [
-          "HTML",
-          "CSS",
-          "Javascript",
-          "Vue Js",
-          "Nuxt Js",
-          "React Js",
-          "Next Js",
-          "Python",
-          "Django",
-          "Node Js",
-          "Express Js"
-        ]
-      },
-      {
-        "title": "Portfolio",
-        "items": [
-          "- Bachelor Degree of Civil Engineering from Azad University of KASHAN (2008-2013)"
-        ]
       }
-    ]
+    ],
+    "expertises": {
+      "title": "Expertises",
+      "items": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Vue Js",
+        "Nuxt Js",
+        "React Js",
+        "Next Js",
+        "Python",
+        "Django",
+        "Node Js",
+        "Express Js"
+      ]
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "items": [
+        "- Bachelor Degree of Civil Engineering from Azad University of KASHAN (2008-2013)"
+      ]
+    }
   },
   "category": "announcement",
   "meta": {
